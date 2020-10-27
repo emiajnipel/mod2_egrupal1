@@ -2,19 +2,24 @@ import paquete_cientifico
 a=9
 b=10
 
-# dimensiones cilindro
-radio_cilindro = 10
-altura_cilindro = 5
+# área de un rectangulo, dados sus lados
+cara_1 = 4
+cara_2 = 8
 
-# calculo de area base cilindro
-area_base = paquete_cientifico.PI * radio_cilindro * radio_cilindro
+area_rectangular = paquete_cientifico.area_rect(cara_1, cara_2)
+print("el área del rectangulo es")
+print(area_rectangular)
 
-#c alculo de volumen cilindro
-volumen_cilindro = paquete_cientifico.vol_cilindro(altura_cilindro, area_base)
-print("Volumen Cilindro:")
-print(volumen_cilindro)
+# perímetro de un rectangulo, dados sus lados
 
-# multiplicación de a y b
-multiplicacion = paquete_cientifico.multiplica(a,b)
-print("la multiplicación es:")
-print(multiplicacion)
+perimetro_rectangular = paquete_cientifico.perim_rect(cara_1, cara_2)
+print("el perimetro es")
+print(perimetro_rectangular)
+
+# distancia recorrida tiempo*velocidad
+velocidad = 5
+tiempo = 60
+
+distancia = paquete_cientifico.distancia_rec(velocidad, tiempo)
+print("la distancia recorrida es")
+print(distancia)
